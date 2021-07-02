@@ -37,7 +37,7 @@ public class NettyClient {
         this.port = port;
     }
 
-    public synchronized void connect() throws InterruptedException {
+    public void connect() throws InterruptedException {
         clientHandler = new ClientHandler();
         eventLoopGroup = new NioEventLoopGroup();
         //启动
